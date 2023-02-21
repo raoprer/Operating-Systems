@@ -1,0 +1,681 @@
+student@MIT-ICT-LAB5-2:~$ *.txt
+*.txt: command not found
+student@MIT-ICT-LAB5-2:~$ ls *.txt
+ls: cannot access '*.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+student@MIT-ICT-LAB5-2:~$ mkdir hello
+student@MIT-ICT-LAB5-2:~$ rmdir hello
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+student@MIT-ICT-LAB5-2:~$ ls -l
+total 32
+drwx------ 2 student student 4096 Oct 27 15:28 Desktop
+drwx------ 2 student student 4096 Oct 27 15:28 Documents
+drwx------ 2 student student 4096 Jan 31 08:43 Downloads
+drwx------ 2 student student 4096 Oct 27 15:28 Music
+drwx------ 2 student student 4096 Oct 27 15:28 Pictures
+drwx------ 2 student student 4096 Oct 27 15:28 Public
+drwx------ 2 student student 4096 Oct 27 15:28 Templates
+drwx------ 2 student student 4096 Oct 27 15:28 Videos
+student@MIT-ICT-LAB5-2:~$ ls -a
+.              .bashrc  Documents  .mozilla  Public                     Videos
+..             .cache   Downloads  Music     .ssh
+.bash_history  .config  .gnupg     Pictures  .sudo_as_admin_successful
+.bash_logout   Desktop  .local     .profile  Templates
+student@MIT-ICT-LAB5-2:~$ ls -la
+total 80
+drwx------ 16 student student 4096 Jan 31 08:55 .
+drwxr-xr-x 16 root    root    4096 Jan 16 12:16 ..
+-rw-------  1 student student  379 Jan 31 08:50 .bash_history
+-rwx------  1 student student  220 Oct 20 10:54 .bash_logout
+-rwx------  1 student student 3771 Oct 20 10:54 .bashrc
+drwx------ 13 student student 4096 Jan 31 08:40 .cache
+drwx------ 12 student student 4096 Jan 16 12:23 .config
+drwx------  2 student student 4096 Oct 27 15:28 Desktop
+drwx------  2 student student 4096 Oct 27 15:28 Documents
+drwx------  2 student student 4096 Jan 31 08:43 Downloads
+drwx------  3 student student 4096 Jan 30 16:52 .gnupg
+drwx------  3 student student 4096 Oct 27 15:28 .local
+drwx------  4 student student 4096 Jan 31 08:40 .mozilla
+drwx------  2 student student 4096 Oct 27 15:28 Music
+drwx------  2 student student 4096 Oct 27 15:28 Pictures
+-rwx------  1 student student  807 Oct 20 10:54 .profile
+drwx------  2 student student 4096 Oct 27 15:28 Public
+drwx------  2 student student 4096 Dec 28 10:23 .ssh
+-rw-r--r--  1 student student    0 Dec 28 11:56 .sudo_as_admin_successful
+drwx------  2 student student 4096 Oct 27 15:28 Templates
+drwx------  2 student student 4096 Oct 27 15:28 Videos
+student@MIT-ICT-LAB5-2:~$ touch hello.txt
+student@MIT-ICT-LAB5-2:~$ vim -v
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.11, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.11
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.11
+apt install neovim      # version 0.4.3-3
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  hello.txt  Pictures  Templates
+student@MIT-ICT-LAB5-2:~$ rm hello.txt
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+student@MIT-ICT-LAB5-2:~$ touch hello.txt
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  hello.txt  Pictures  Templates
+student@MIT-ICT-LAB5-2:~$ ls *.txt
+hello.txt
+student@MIT-ICT-LAB5-2:~$ rm *.txt
+student@MIT-ICT-LAB5-2:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+student@MIT-ICT-LAB5-2:~$ pwd
+/home/student
+student@MIT-ICT-LAB5-2:~$ ls -a
+.              .bashrc  Documents  .mozilla  Public                     Videos
+..             .cache   Downloads  Music     .ssh
+.bash_history  .config  .gnupg     Pictures  .sudo_as_admin_successful
+.bash_logout   Desktop  .local     .profile  Templates
+student@MIT-ICT-LAB5-2:~$ man ls
+astudent@MIT-ICT-LAB5-2:~$ cat hello.txt
+cat: hello.txt: No such file or directory
+student@MIT-ICT-LAB5-2:~$ cat
+Hello world
+Hello world
+
+
+^Z
+[1]+  Stopped                 cat
+student@MIT-ICT-LAB5-2:~$ mkdir 210911002
+student@MIT-ICT-LAB5-2:~$ cd 210911002/
+student@MIT-ICT-LAB5-2:~/210911002$ mkdir lab1
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ pwd
+/home/student/210911002/lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file1.txt 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch file2.txt file3.txt file4.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file3.txt  file4.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls > file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file1.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | head -n 2
+file1.txt
+file2.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | tail -n 2
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd .
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ c d..
+c: command not found
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ ls >> file1.txt
+student@MIT-ICT-LAB5-2:~/210911002$ cat file1.txt
+file1.txt
+lab1
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1/
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > file2.txt
+Hello world!!! student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file2.txt
+Hello world!!! student@MIT-ICT-LAB5-2:~/210911002/lab1$ ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file1.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file2.txt
+Hello world!!! student@MIT-ICT-LAB5-2:~/210911002/lab1$ ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ vim --version
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.11, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.11
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.11
+apt install neovim      # version 0.4.3-3
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ man sudo
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ tail < file1.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | tail -n 2
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | wc
+      5       5      50
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | wc -l
+5
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt ../
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt lab1/
+mv: cannot stat 'file3.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt /lab1
+mv: cannot stat 'file3.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv ./lab1
+mv: missing destination file operand after './lab1'
+Try 'mv --help' for more information.
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt ./lab1/
+mv: cannot stat 'file3.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ mv file3.txt ./lab1/
+student@MIT-ICT-LAB5-2:~/210911002$ mv file3.txt ../
+mv: cannot stat 'file3.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt ../
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt ./lab1/
+mv: cannot stat 'file3.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ mv file3.txt ./lab1/
+student@MIT-ICT-LAB5-2:~/210911002$ cd ..
+student@MIT-ICT-LAB5-2:~$ ls
+210911002  Documents  Music     Public     Videos
+Desktop    Downloads  Pictures  Templates
+student@MIT-ICT-LAB5-2:~$ cd ./user
+bash: cd: ./user: No such file or directory
+student@MIT-ICT-LAB5-2:~$ cd 210911002/lab1/
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file1.txt ../ hello.txt
+mv: target 'hello.txt' is not a directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv file3.txt hello.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file4.txt  file5.txt  hello.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv hello.txt file3.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch .hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -la
+total 16
+drwxrwxr-x 2 student student 4096 Jan 31 09:27 .
+drwxrwxr-x 3 student student 4096 Jan 31 09:21 ..
+-rw-rw-r-- 1 student student   50 Jan 31 09:06 file1.txt
+-rw-rw-r-- 1 student student   15 Jan 31 09:09 file2.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file3.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file4.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file5.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:27 .hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -a
+.  ..  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  .hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ rm .hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find . - *.txt
+.
+./file4.txt
+./file5.txt
+./file3.txt
+./file1.txt
+./file2.txt
+find: ‘-’: No such file or directory
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find . *.txt
+.
+./file4.txt
+./file5.txt
+./file3.txt
+./file1.txt
+./file2.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find .. *.txt
+'..
+../lab1
+../lab1/file4.txt
+../lab1/file5.txt
+../lab1/file3.txt
+../lab1/file1.txt
+../lab1/file2.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ man mv
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv -i file3.txt hello.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file4.txt  file5.txt  hello.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ mv hello.txt file3.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -a
+.  ..  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -la
+total 16
+drwxrwxr-x 2 student student 4096 Jan 31 09:33 .
+drwxrwxr-x 3 student student 4096 Jan 31 09:21 ..
+-rw-rw-r-- 1 student student   50 Jan 31 09:06 file1.txt
+-rw-rw-r-- 1 student student   15 Jan 31 09:09 file2.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file3.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file4.txt
+-rw-rw-r-- 1 student student    0 Jan 31 09:05 file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find . -name *.txt
+find: paths must precede expression: `file2.txt'
+find: possible unquoted pattern after predicate `-name'?
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find -name . *txt
+find: paths must precede expression: `file1.txt'
+find: possible unquoted pattern after predicate `-name'?
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find -name . ".txt
+> 
+> 
+> 
+> 
+> 
+> ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep -R "Hello" .
+./file2.txt:Hello world!!! 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep -Ril "hello" .
+./file2.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ['1','2','3','4']
+ls: cannot access '[1,2,3,4]': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ man find
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ find . -name *.txt
+find: paths must precede expression: `file2.txt'
+find: possible unquoted pattern after predicate `-name'?
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *[1,2,3,4,5]
+ls: cannot access '*[1,2,3,4,5]': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls .*txt
+ls: cannot access '.*txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *.txt
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *[0-9]*
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *[a-z]*
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [a,e,i,o,u]*
+ls: cannot access '[a,e,i,o,u]*': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!a-z]*
+ls: cannot access '[!a-z]*': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!a,e,i,o,u]*
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!a,!e,!i,!o,!u]*
+bash: !e,!i,!o,!u]: event not found
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!a || !e || !o]*
+bash: !e: event not found
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!aeiou]*
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!aeiouAEIOU]*
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *.txt
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [!aeiouAEIOU]*.txt
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [aeiouAEIOU]*.txt
+ls: cannot access '[aeiouAEIOU]*.txt': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls [faeiouAEIOU]*.txt
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ wc -l <<<ls
+1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ wc -l <<< l
+1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ wc -l <<< ls
+1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ wc <<< ls
+1 1 3
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep "Hello" .
+grep: .: Is a directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep -Ril "Hello" . 
+./file2.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep -R "Hello" .
+./file2.txt:Hello world!!! 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ grep -R *.txt .
+./file1.txt:file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ node -v
+
+Command 'node' not found, but can be installed with:
+
+apt install nodejs
+Please ask your administrator.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ apt install nodejs
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ sudo apt install nodejs
+[sudo] password for student: 
+student is not in the sudoers file.  This incident will be reported.
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ man head
+student@MIT-ICT-LAB5-2:~/210911002/lab1$  ls | head -n 2
+commands1.txt
+file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ file1.txt
+file1.txt: command not found
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ head -n 2
+^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ head -n 2
+^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls | head -n 2
+commands1.txt
+file1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > hello.py
+print('Hello')
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ python3 hello.py
+Hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file.txt
+cat: file.txt: No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > file4.txt
+Hello Kushagra!!!
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat file4.txt
+Hello Kushagra!!!
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ vim 
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.11, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.11
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.11
+apt install neovim      # version 0.4.3-3
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ vim -v
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.11, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.11
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.11
+apt install neovim      # version 0.4.3-3
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ sudo apt install vim
+[sudo] password for student: 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat hello.py
+print('Hello')
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > hello.py
+a=4   
+b=5
+print(a+b)
+print(a) 
+print(b)
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ python3 hello.py
+9
+4
+5
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ python3 hello.py
+9
+4
+5
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > hello.cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+cout<<"Hello";
+}
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ exit
+There are stopped jobs.
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ --version
+g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat hello.cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+cout<<"Hello";
+}
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cat > hello.cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+cout<<"Hello";
+return 0;
+}student@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ javac --version
+
+Command 'javac' not found, but can be installed with:
+
+apt install default-jdk              # version 2:1.11-72, or
+apt install openjdk-11-jdk-headless  # version 11.0.17+8-1ubuntu2~20.04
+apt install openjdk-16-jdk-headless  # version 16.0.1+9-1~20.04
+apt install openjdk-17-jdk-headless  # version 17.0.5+8-2ubuntu1~20.04
+apt install openjdk-8-jdk-headless   # version 8u352-ga-1~20.04
+apt install ecj                      # version 3.16.0-1
+apt install openjdk-13-jdk-headless  # version 13.0.7+5-0ubuntu1~20.04
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????
+ls: cannot access '????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????*
+a.out  commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ a.out
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ./a.out
+bash: ./a.out: No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ a.out
+a.out: command not found
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ./a.out
+bash: ./a.out: No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ rm a.out
+rm: cannot remove 'a.out': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+a.out  commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ rm a.out
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ g++ hello.cpp -o hello
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ./hello
+Hellostudent@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????*
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls *????
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ hello
+
+Command 'hello' not found, but can be installed with:
+
+snap install hello              # version 2.10, or
+apt  install hello              # version 2.10-2ubuntu2
+apt  install hello-traditional  # version 2.10-5
+
+See 'snap info hello' for additional versions.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ./hello
+Hellostudent@MIT-ICT-LAB5-2:~/210911002/lab1$ 
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ??????????
+ls: cannot access '??????????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ?????????*
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????????????????*
+ls: cannot access '????????????????*': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ?????????????*
+commands1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ???????*
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d ????
+ls: cannot access '????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ld
+ld: no input files
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ./lab1 ????
+ls: cannot access './lab1': No such file or directory
+ls: cannot access '????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d /lab1/????
+ls: cannot access '/lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ ls -d /lab1/????
+ls: cannot access '/lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d ./lab1/????
+ls: cannot access './lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d /????
+/boot  /home  /proc  /root  /sbin  /snap
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls /????
+/boot:
+config-5.15.0-56-generic  initrd.img                    memtest86+.bin                System.map-5.15.0-58-generic  vmlinuz.old
+config-5.15.0-58-generic  initrd.img-5.15.0-56-generic  memtest86+.elf                vmlinuz
+efi                       initrd.img-5.15.0-58-generic  memtest86+_multiboot.bin      vmlinuz-5.15.0-56-generic
+grub                      initrd.img.old                System.map-5.15.0-56-generic  vmlinuz-5.15.0-58-generic
+
+/home:
+administrator  exam1  exam2  exam3  exam4  exam5  exam6  lost+found  student  student1  student2  student3  student4  student5
+
+/proc:
+1     1128  1239  1296  1412  1578  1782  1856  2     228   3     40    4844  5284  5696  68   799         bus            irq          pagetypeinfo   version_signature
+10    1144  124   1297  1417  1582  1786  1859  20    229   30    4010  4865  532   57    69   8           cgroups        kallsyms     partitions     vmallocinfo
+1026  1145  1242  1298  1419  1586  1787  186   2012  231   31    402   4868  5392  5738  705  800         cmdline        kcore        pressure       vmstat
+1027  1151  1245  1299  1425  1591  1791  1862  2031  232   3113  408   4877  54    5741  706  801         consoles       keys         schedstat      zoneinfo
+1062  1152  1250  13    1468  1595  1794  1865  2056  237   315   4139  4895  5403  5782  728  803         cpuinfo        key-users    scsi
+1064  1154  1257  130   15    16    18    1866  21    24    32    4197  49    5405  58    729  805         crypto         kmsg         self
+1065  116   1261  1300  150   1602  1803  1867  2118  244   3223  42    5     5412  5807  764  821         devices        kpagecgroup  slabinfo
+1067  117   127   1301  1504  1611  1807  1868  2130  2472  33    43    50    5425  5848  765  878         diskstats      kpagecount   softirqs
+1069  118   1270  1302  1532  1617  1809  1870  2134  2475  34    4344  5015  5435  5850  768  905         dma            kpageflags   stat
+1074  119   1286  133   1533  1619  1816  1872  2143  25    343   4347  5016  5495  6     769  913         driver         loadavg      swaps
+1079  1195  1288  134   1538  163   1824  1877  22    26    36    4353  5031  55    60    771  923         dynamic_debug  locks        sys
+1095  12    129   1345  154   1630  1831  1882  221   27    364   44    509   5510  61    772  926         execdomains    mdstat       sysrq-trigger
+11    120   1290  136   1540  1705  1845  1898  2224  270   37    4421  51    56    62    789  960         fb             meminfo      sysvipc
+1105  1200  1291  1379  1544  1723  1846  19    223   272   38    45    510   5630  63    791  975         filesystems    misc         thread-self
+1110  121   1292  138   1559  1728  1847  1903  224   273   3841  46    5162  5631  64    792  acpi        fs             modules      timer_list
+1114  122   1293  139   156   1735  1850  1906  2252  28    3849  4652  52    5632  65    794  asound      interrupts     mounts       tty
+1118  1222  1294  14    1564  1742  1852  1950  226   283   39    475   5206  5682  66    796  bootconfig  iomem          mtrr         uptime
+1124  123   1295  1410  1571  1758  1855  1988  227   291   4     48    5283  5691  67    798  buddyinfo   ioports        net          version
+ls: cannot open directory '/root': Permission denied
+
+/sbin:
+aa-remove-unknown      cupsreject             groupdel                     iwspy                  parted                   unix_chkpwd
+aa-status              debugfs                groupmems                    jail_uml               partprobe                unix_update
+aa-teardown            delgroup               groupmod                     kbdrate                pccardctl                update-binfmts
+accessdb               deluser                grpck                        kerneloops             pivot_root               update-ca-certificates
+acpid                  depmod                 grpconv                      killall5               plymouthd                update-catalog
+addgnupghome           devlink                grpunconv                    ldattach               popcon-largest-unused    update-cracklib
+addgroup               dhclient               grub-bios-setup              ldconfig               popularity-contest       update-default-aspell
+add-shell              dhclient-script        grub-install                 ldconfig.real          poweroff                 update-default-ispell
+adduser                dmidecode              grub-macbless                libgvc6-config-update  pppd                     update-default-wordlist
+agetty                 dmsetup                grub-mkconfig                locale-gen             pppdump                  update-dictcommon-aspell
+alsa                   dmstats                grub-mkdevicemap             logrotate              pppoe-discovery          update-dictcommon-hunspell
+alsabat-test           dnsmasq                grub-probe                   logsave                pppstats                 update-fmtutil
+alsactl                dosfsck                grub-reboot                  losetup                pptp                     update-fonts-alias
+alsa-info              dosfslabel             grub-set-default             lpadmin                pptpsetup                update-fonts-dir
+anacron                dpkg-preconfigure      halt                         lpc                    pwck                     update-fonts-scale
+apparmor_parser        dpkg-reconfigure       hdparm                       lpinfo                 pwconv                   update-grub
+apparmor_status        dumpe2fs               hwclock                      lpmove                 pwunconv                 update-grub2
+applygnupgdefaults     e2freefrag             iconvconfig                  lsmod                  raw                      update-grub-gfxpayload
+aptd                   e2fsck                 icupkg                       lspcmcia               readprofile              update-gsfontmap
+arpd                   e2image                iio-sensor-proxy             make-ssl-cert          reboot                   update-icon-caches
+arptables              e2label                init                         mkdosfs                regdbdump                update-inetd
+arptables-nft          e2mmpstatus            init.lxc                     mke2fs                 remove-default-ispell    update-info-dir
+arptables-nft-restore  e2scrub                init.lxc.static              mkfs                   remove-default-wordlist  update-initramfs
+arptables-nft-save     e2scrub_all            insmod                       mkfs.bfs               remove-shell             update-language
+arptables-restore      e2undo                 installkernel                mkfs.cramfs            resize2fs                update-language-dat
+arptables-save         e4crypt                install-sgmlcatalog          mkfs.ext2              rfkill                   update-language-def
+aspell-autobuildhash   e4defrag               invoke-rc.d                  mkfs.ext3              rmmod                    update-language-lua
+avahi-autoipd          ebtables               ip                           mkfs.ext4              rmt                      update-locale
+avahi-daemon           ebtables-nft           ip6tables                    mkfs.fat               rmt-tar                  update-mime
+badblocks              ebtables-nft-restore   ip6tables-apply              mkfs.minix             rsyslogd                 update-passwd
+biosdecode             ebtables-nft-save      ip6tables-legacy             mkfs.msdos             rtacct                   update-pciids
+blkdeactivate          ebtables-restore       ip6tables-legacy-restore     mkfs.ntfs              rtcwake                  update-rc.d
+blkdiscard             ebtables-save          ip6tables-legacy-save        mkfs.vfat              rtkitctl                 update-secureboot-policy
+blkid                  escapesrc              ip6tables-nft                mkhomedir_helper       rtmon                    update-texmf
+blkzone                faillock               ip6tables-nft-restore        mkinitramfs            runlevel                 update-texmf-config
+blockdev               fatlabel               ip6tables-nft-save           mklost+found           runuser                  update-tl-stacked-conffile
+brctl                  fdformat               ip6tables-restore            mkntfs                 saned                    update-updmap
+bridge                 fdisk                  ip6tables-restore-translate  mkswap                 select-default-ispell    update-xmlcatalog
+brltty                 filefrag               ip6tables-save               ModemManager           select-default-wordlist  upgrade-from-grub-legacy
+brltty-setup           findfs                 ip6tables-translate          modinfo                service                  usb_modeswitch
+capsh                  fixparts               ippeveprinter                modprobe               setcap                   usb_modeswitch_dispatcher
+cfdisk                 fsck                   ippusbxd                     mount.fuse             setvesablank             usbmuxd
+cgdisk                 fsck.cramfs            iptables                     mount.lowntfs-3g       setvtrgb                 useradd
+chat                   fsck.ext2              iptables-apply               mount.ntfs             sfdisk                   userdel
+chcpu                  fsck.ext3              iptables-legacy              mount.ntfs-3g          sgdisk                   usermod
+chgpasswd              fsck.ext4              iptables-legacy-restore      netplan                shadowconfig             uuidd
+chmem                  fsck.fat               iptables-legacy-save         NetworkManager         shutdown                 validlocale
+chpasswd               fsck.minix             iptables-nft                 newusers               spice-vdagentd           vcstime
+chroot                 fsck.msdos             iptables-nft-restore         nfnl_osf               start-stop-daemon        vigr
+cpgr                   fsck.vfat              iptables-nft-save            nologin                sulogin                  vipw
+cppw                   fsfreeze               iptables-restore             ntfsclone              swaplabel                visudo
+cracklib-check         fstab-decode           iptables-restore-translate   ntfscp                 swapoff                  vpddecode
+cracklib-format        fstrim                 iptables-save                ntfslabel              swapon                   vtund
+cracklib-packer        gdisk                  iptables-translate           ntfsresize             switch_root              wipefs
+cracklib-unpacker      gdm3                   irqbalance                   ntfsundelete           sysctl                   wpa_action
+crda                   genccode               irqbalance-ui                on_ac_power            tarcat                   wpa_cli
+create-cracklib-dict   gencmn                 isosize                      openvpn                tc                       wpa_supplicant
+cron                   genl                   ispell-autobuildhash         ownership              tcpdump                  xtables-legacy-multi
+ctrlaltdel             gennorm2               iucode-tool                  pam-auth-update        telinit                  xtables-monitor
+cupsaccept             gensprep               iucode_tool                  pam_extrausers_chkpwd  thermald                 xtables-nft-multi
+cups-browsed           getcap                 iw                           pam_extrausers_update  tipc                     zic
+cupsctl                getpcaps               iwconfig                     pam_getenv             tune2fs                  zramctl
+cupsd                  getty                  iwevent                      pam_tally              tzconfig
+cupsdisable            getweb                 iwgetid                      pam_tally2             u-d-c-print-pci-ids
+cupsenable             gnome-menus-blacklist  iwlist                       pam_timestamp_check    ufw
+cupsfilter             groupadd               iwpriv                       paperconfig            umount.udisks2
+
+/snap:
+bare  bin  core18  core20  gnome-3-34-1804  gnome-3-38-2004  gtk-common-themes  README  snapd  snap-store  sublime-text
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d /lab1/????
+ls: cannot access '/lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d ./lab1/????
+ls: cannot access './lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -d lab1/????
+ls: cannot access 'lab1/????': No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????*
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ touch ay.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????*
+ay.txt  commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt  hello  hello.cpp  hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls ????*.txt
+commands1.txt  file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ 
