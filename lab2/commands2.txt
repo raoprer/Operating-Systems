@@ -1,0 +1,328 @@
+
+Question 1
+student@MIT-ICT-LAB5-2:~$ ls
+210911002  210953190  Desktop    Downloads  Pictures  snap       untitled
+210911174  210953242  Documents  Music      Public    Templates  Videos
+student@MIT-ICT-LAB5-2:~$ cd 210911002
+student@MIT-ICT-LAB5-2:~/210911002$ ls
+lab1
+student@MIT-ICT-LAB5-2:~/210911002$ mkdir lab2
+student@MIT-ICT-LAB5-2:~/210911002$ ls
+lab1  lab2
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab2
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+ay.txt         file1.txt  file3.txt  file5.txt  hello.cpp
+commands1.txt  file2.txt  file4.txt  hello      hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls -l
+total 80
+-rw-rw-r-- 1 student student     0 Jan 31 11:12 ay.txt
+-rw-rw-r-- 1 student student 37333 Jan 31 11:20 commands1.txt
+-rw-rw-r-- 1 student student    50 Jan 31 09:06 file1.txt
+-rw-rw-r-- 1 student student    15 Jan 31 09:09 file2.txt
+-rw-rw-r-- 1 student student     0 Jan 31 09:05 file3.txt
+-rw-rw-r-- 1 student student    18 Jan 31 10:20 file4.txt
+-rw-rw-r-- 1 student student     0 Jan 31 09:05 file5.txt
+-rwxrwxr-x 1 student student 17168 Jan 31 11:03 hello
+-rw-rw-r-- 1 student student    79 Jan 31 10:29 hello.cpp
+-rw-rw-r-- 1 student student    37 Jan 31 10:23 hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+ay.txt         file1.txt  file3.txt  file5.txt  hello.cpp
+commands1.txt  file2.txt  file4.txt  hello      hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ../lab2\
+> ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab2 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ touch sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ la
+sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat > sort-this.txt
+3
+5
+1
+3
+8
+9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sort-this.txt 
+3
+5
+1
+3
+8
+9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ sort -n sort-this.txt
+1
+3
+3
+5
+8
+9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sort-this.txt 
+3
+5
+1
+3
+8
+9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ sort -o sort-this.txt sorted-that.txt
+sort: cannot read: sorted-that.txt: No such file or directory
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ touch sorted-that.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ sort -o sort-this.txt sorted-that.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+sorted-that.txt  sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sorted-that.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ sort -o sort-this.txt sorted-that.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sorted-that.txt 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat > sorted-that.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ wc sort-this.txt
+0 0 0 sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ wc sort-this.txt 
+0 0 0 sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ wc -l  sort-this.txt 
+0 sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ rm sorted-that.txt 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+sort-this.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ touch table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat > table.txt
+1	3	5	7
+2	4	6	8	
+3	5	7	9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls -l | cut -df 2
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1-3 table.txt 
+1	3
+2	4
+3	5
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1-5 table.txt 
+1	3	5
+2	4	6
+3	5	7
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1-2 table.txt 
+1	
+2	
+3	
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1-3,7 table.txt 
+1	37
+2	48
+3	59
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1-3,5-7 table.txt 
+1	35	7
+2	46	8
+3	57	9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -c 1- table.txt 
+1	3	5	7
+2	4	6	8	
+3	5	7	9
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cut -f 1,3 table.txt 
+1	5
+2	6
+3	7
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab1
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ ls
+ay.txt         file1.txt  file3.txt  file5.txt  hello.cpp
+commands1.txt  file2.txt  file4.txt  hello      hello.py
+student@MIT-ICT-LAB5-2:~/210911002/lab1$ cd ..
+student@MIT-ICT-LAB5-2:~/210911002$ cd lab2
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ touch commands2.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ g edit
+g: command not found
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ gedit
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ vim --version
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.11, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.11
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.11
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.11
+apt install neovim      # version 0.4.3-3
+
+Ask your administrator to install one of them.
+
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ gedit
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ps
+    PID TTY          TIME CMD
+   2076 pts/0    00:00:00 bash
+   7621 pts/0    00:00:00 ps
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ gedit
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+commands2.txt  sort-this.txt  table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sort-this.txt 
+'student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat sort-this.txt 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ gedit
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+commands2.txt  f1.txt  sort-this.txt  table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat f1.txt `
+> ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat f1.txt 
+Hello siya!
+how arwe you???
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep "siya" f1.txt
+Hello siya!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat > f1.txt
+hjkfds rjiewjfjkmfiewjifdstudent@MIT-ICT-LAB5-2:~/210911002/lab2$ cat f1.txt 
+hjkfds rjiewjfjkmfiewjifdstudent@MIT-ICT-LAB5-2:~/210911002/lab2$ l
+commands2.txt  f1.txt  sort-this.txt  table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ rm f1.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+commands2.txt  sort-this.txt  table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo hello
+hello
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is great! yes!!!
+echo Prerana is great! yesecho hello!
+Prerana is great! yesecho hello!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ls
+commands2.txt  sort-this.txt  table.txt
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ ^C
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is Great
+Prerana is Great
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo hello!
+hello!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is great! yes!!!
+echo Prerana is great! yesecho hello!!
+Prerana is great! yesecho hello!!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is Great! yes
+Prerana is Great! yes
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is Great! yes!
+Prerana is Great! yes!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ echo Prerana is Great! yes!!
+echo Prerana is Great! yesecho Prerana is Great! yes!
+Prerana is Great! yesecho Prerana is Great! yes!
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+2+3
+5
+2/4
+0
+3/2
+1
+4/2
+2
+^C
+(interrupt) use quit to exit.
+5>2
+1
+5<2
+0
+quit
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ vi --version
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Jan 11 2023 23:54:11)
+Included patches: 1-2269, 3612, 3625, 3669, 3741
+Modified by team+vim@tracker.debian.org
+Compiled by team+vim@tracker.debian.org
+Small version without GUI.  Features included (+) or not (-):
++acl               -farsi             -mouse_sysmouse    -tcl
+-arabic            -file_in_path      -mouse_urxvt       -termguicolors
++autocmd           -find_in_path      +mouse_xterm       -terminal
+-autochdir         -float             +multi_byte        +terminfo
+-autoservername    -folding           -multi_lang        +termresponse
+-balloon_eval      -footer            -mzscheme          -textobjects
+-balloon_eval_term +fork()            -netbeans_intg     -textprop
+-browse            -gettext           -num64             -timers
++builtin_terms     -hangul_input      -packages          -title
+-byte_offset       +iconv             -path_extra        -toolbar
+-channel           +insert_expand     -perl              +user_commands
+-cindent           -job               -persistent_undo   -vartabs
+-clientserver      +jumplist          -printer           +vertsplit
+-clipboard         -keymap            -profile           +virtualedit
++cmdline_compl     -lambda            -python            +visual
++cmdline_hist      -langmap           -python3           +visualextra
+-cmdline_info      -libcall           -quickfix          -viminfo
++comments          -linebreak         -reltime           +vreplace
+-conceal           -lispindent        -rightleft         +wildignore
+-cryptv            +listcmds          -ruby              -wildmenu
+-cscope            +localmap          +scrollbind        +windows
++cursorbind        -lua               -signs             +writebackup
+-cursorshape       -menu              -smartindent       -X11
+-dialog            -mksession         -sound             +xfontset
+-diff              +modify_fname      -spell             -xim
+-digraphs          +mouse             -startuptime       -xpm
+-dnd               -mouseshape        -statusline        -xsmp
+-ebcdic            -mouse_dec         -sun_workshop      -xterm_clipboard
+-emacs_tags        -mouse_gpm         -syntax            -xterm_save
+-eval              -mouse_jsbterm     +tag_binary        
++ex_extra          -mouse_netterm     -tag_old_static    
+-extra_search      +mouse_sgr         -tag_any_white     
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+       defaults file: "$VIMRUNTIME/defaults.vim"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H   -Wdate-time  -g -O2 -fdebug-prefix-map=/build/vim-Bxmteu/vim-8.1.2269=. -fstack-protector-strong -Wformat -Werror=format-security -DTINY_VIMRC -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1       
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim    -lSM -lICE -lXpm -lXt -lX11 -lXdmcp -lSM -lICE  -lm -ltinfo  -lselinux -lacl -lattr -ldl           
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ 
+
+
+Question 2
+part 1
+gedit
+^C
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ cat textFile.txt 
+Hello 
+hi
+My name is Prerana 
+I love to code, dance and sing.
+listening      to music is my passion123
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep -E "^.{2}$" textFile.txt 
+hi
+
+part 2
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep -E ^A-Z textFile.txt 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep -E ^H textFile.txt 
+Hello 
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep -E ^[A-Z] textFile.txt 
+Hello 
+My name is Prerana 
+I love to code, dance and sing.
+
+
+part 3
+student@MIT-ICT-LAB5-2:~/210911002/lab2$ grep '[\.]$' textFile.txt 
+I love to code, dance and sing.
+
+part 4
+
+
+mprao@Ubuntu22:~/210911002/lab4$ ls | grep [0-9] | x args wc
+x: command not found
+mprao@Ubuntu22:~/210911002/lab4$ ls | grep [0-9] | xargs wc
+      3      10      55 1cp.sh
+wc: 2q: Is a directory
+      0       0       0 2q
+     23      42     375 3sort.sh
+      9      17     118 4wordcount.sh
+     14      42     245 5menuDriven.sh
+      0       2      12 copy-file1.txt
+      0       2      12 file1.txt
+      4       4      35 file4.txt
+     53     119     852 total
+mprao@Ubuntu22:~/210911002/lab4$ cd ..
+mprao@Ubuntu22:~/210911002$ cd lab2
+mprao@Ubuntu22:~/210911002/lab2$ touch studentInformation.txt
+mprao@Ubuntu22:~/210911002/lab2$ vim s
+sorted.txt              studentInformation.txt
+sort-this.txt           
+mprao@Ubuntu22:~/210911002/lab2$ vim studentInformation.txt 
+mprao@Ubuntu22:~/210911002/lab2$ grep -w 'ICT' studentInformation.txt | wc -l
+4
+mprao@Ubuntu22:~/210911002/lab2$ sed -e 's/IT/Information technology' studentInformation.txt > ITStudents.txt
+sed: -e expression #1, char 27: unterminated `s' command
+mprao@Ubuntu22:~/210911002/lab2$ sed -e `s/IT/Information technology` studentInformation.txt > ITStudents.txt
+bash: s/IT/Information: No such file or directory
+sed: -e expression #1, char 17: unknown option to `s'
+mprao@Ubuntu22:~/210911002/lab2$ head -1 studentInformation.txt | tr '[a-z]' '[A-Z]'
+REGNO:NAME:DEPT:BRANCH:SECTION:SUB1:SUB2:SUB3
+mprao@Ubuntu22:~/210911002/lab2$ 
+
+

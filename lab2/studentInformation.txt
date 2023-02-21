@@ -1,0 +1,10 @@
+regno:name:dept:branch:section:sub1:sub2:sub3
+1234:Vibhu:CSE:CSE:A:100:95:90
+1235:Arya:CSE:CSE:C:90:80:70
+1236:Rachel:ICT:IT:A:100:70:90
+1237:Diya:ICT:IT:B:70:80:90
+1238:Ram:ICT:CCE:C:80:90:100
+1239:Ross:EEE:EEE:A:70:50:60
+1240:Jordan:civil:civil:B:70:70:60
+1241:Das:mech:mech:A:80:80:50
+1242:Keshav:ICT:CCE:B:100:70:90
