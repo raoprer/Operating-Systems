@@ -1,0 +1,165 @@
+mprao@Ubuntu22:~$ cd 210911002/lab3/
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 1fileOrDir.sh 
+Enter the text file name
+hello.txt
+Neither a text file nor a directory
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 1fileOrDir.sh 
+Enter the text file name
+hello.txt
+Neither a text file nor a directory
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 1fileOrDir.sh 
+Enter the text file name
+hello
+Neither a text file nor a directory
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ pwd
+/home/mprao/210911002/lab3
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 1fileOrDir.sh 
+Enter the text file name
+hello.txt
+hello.txt is a regular file
+mprao@Ubuntu22:~/210911002/lab3$ bash 1fileOrDir.sh 
+Enter the text file name
+hello
+Neither a text file nor a directory
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 1fileOrDir.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 2listFiles.sh 
+mprao@Ubuntu22:~/210911002/lab3$ pwd
+/home/mprao/210911002/lab3
+mprao@Ubuntu22:~/210911002/lab3$ bash 2listFiles.sh 
+Enter the path
+/home/mprao/210911002/lab3
+Enter the pattern
+hel
+hello.txt
+mprao@Ubuntu22:~/210911002/lab3$ vim 2listFiles.sh 
+mprao@Ubuntu22:~/210911002/lab3$ mkdir OS
+mprao@Ubuntu22:~/210911002/lab3$ cd OS
+mprao@Ubuntu22:~/210911002/lab3/OS$ touch abc.txt
+mprao@Ubuntu22:~/210911002/lab3/OS$ cd ..
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+find: unknown predicate `-deapth'
+3txtTOtext.sh: line 1: result: command not found
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+3txtTOtext.sh: line 1: result: command not found
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+3txtTOtext.sh: line 1: result: command not found
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim prog1.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+3txtTOtext.sh: line 1: result: command not found
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 3txtTOtext.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+renaming ./hello.txt
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 4gs.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 3txtTOtext.sh 
+renaming ./OS/abc.txt
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 4gs.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 4gs.sh 
+Enter basics and TA
+10.5 12.5
+Gross Salary is 24.05
+mprao@Ubuntu22:~/210911002/lab3$ vim 4gs.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 4gs.sh 
+mprao@Ubuntu22:~/210911002/lab3$ touch 5moveFilesExt
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt 
+mprao@Ubuntu22:~/210911002/lab3$ mv 5moveFilesExt 5moveFilesExt.sh
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 5moveFilesExt.sh 
+Enter the extension
+.text
+Enter the directory name
+moved
+find: unknown predicate `-maxdeapth'
+mv: cannot stat 'result': No such file or directory
+All files renamd
+mprao@Ubuntu22:~/210911002/lab3$ cd moved |ls
+1fileOrDir.sh  4gs.sh            moved     textFIle
+2listFiles.sh  5moveFilesExt.sh  OS
+3txtTOtext.sh  hello.text        prog1.sh
+mprao@Ubuntu22:~/210911002/lab3$ ls | cd moved
+mprao@Ubuntu22:~/210911002/lab3$ cd moved
+mprao@Ubuntu22:~/210911002/lab3/moved$ ls
+mprao@Ubuntu22:~/210911002/lab3/moved$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3/moved$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3/moved$ bash 5moveFilesExt.sh 
+Enter the extension
+text
+Enter the directory
+abcd
+find: unknown predicate `-maxdeapth'
+mv: cannot stat 'result': No such file or directory
+All files moved
+mprao@Ubuntu22:~/210911002/lab3/moved$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3/moved$ bash 5moveFilesExt.sh 
+Enter the extension
+text
+Enter the directory
+abc
+find: unknown predicate `-maxdeapth'
+mv: cannot stat 'result': No such file or directory
+All files moved
+mprao@Ubuntu22:~/210911002/lab3/moved$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3/moved$ cd ..
+mprao@Ubuntu22:~/210911002/lab3$ bash 5moveFilesExt.sh 
+Enter the extension
+text
+Enter the directory name
+abc
+find: unknown predicate `-maxdeapth'
+mv: cannot stat 'result': No such file or directory
+All files renamed
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 5moveFilesExt.sh 
+find: paths must precede expression: `2listFiles.sh'
+find: possible unquoted pattern after predicate `-name'?
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 5moveFilesExt.sh 
+Enter the extension
+text
+Enter the directory
+abcde
+mprao@Ubuntu22:~/210911002/lab3$ vim 5moveFilesExt.sh 
+mprao@Ubuntu22:~/210911002/lab3$ touch 6replaceEx
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx 
+mprao@Ubuntu22:~/210911002/lab3$ mv 6replaceEx 6replaceEx.sh
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ touch file6.txt
+mprao@Ubuntu22:~/210911002/lab3$ vim file6.txt 
+mprao@Ubuntu22:~/210911002/lab3$ bash 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim file6.txt 
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ bash 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ vim file6.txt 
+mprao@Ubuntu22:~/210911002/lab3$ vim 6replaceEx.sh 
+mprao@Ubuntu22:~/210911002/lab3$ touch 7delEven.sh
+mprao@Ubuntu22:~/210911002/lab3$ vim 7delEven.sh 
+mprao@Ubuntu22:~/210911002/lab3$ touch numbers.txt
+mprao@Ubuntu22:~/210911002/lab3$ vim numbers.txt 
+mprao@Ubuntu22:~/210911002/lab3$ bash 7delEven.sh 
+Enter file
+numbers.txt
+mprao@Ubuntu22:~/210911002/lab3$ vim numbers.txt 
+mprao@Ubuntu22:~/210911002/lab3$ cd ..
+
