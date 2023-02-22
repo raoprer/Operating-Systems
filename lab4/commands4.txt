@@ -1,0 +1,208 @@
+mprao@Ubuntu22:~/210911002$ mkdir lab4
+mprao@Ubuntu22:~/210911002$ cd lab4
+mprao@Ubuntu22:~/210911002/lab4$ touch 1cp.sh
+mprao@Ubuntu22:~/210911002/lab4$ vim 1cp.sh 
+mprao@Ubuntu22:~/210911002/lab4$ touch file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ cat >file1.txt 
+Hello World!mprao@Ubuntu22:~/210911002/lab4$ 
+mprao@Ubuntu22:~/210911002/lab4$ cat file1.txt 
+Hello World!mprao@Ubuntu22:~/210911002/lab4$ 
+mprao@Ubuntu22:~/210911002/lab4$ bash 1cp.sh 
+Enter the file name
+file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  copy-file1.txt  file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ cat copy-file1.txt 
+Hello World!mprao@Ubuntu22:~/210911002/lab4$ 
+mprao@Ubuntu22:~/210911002/lab4$ vim 1cp.sh 
+mprao@Ubuntu22:~/210911002/lab4$ mkdir 2q
+mprao@Ubuntu22:~/210911002/lab4$ cd 2q
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 2rm.sh
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch hello.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+2rm.sh  hello.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+No files provided
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh 
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+2rm.sh: line 2: [: .txt: integer expression expected
+rm: missing operand
+Try 'rm --help' for more information.
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh 
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+Done
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+2rm.sh  hello.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh 
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash
+bash     bashbug  
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+rm: remove regular empty file 'hello.txt'? y
+Done
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+2rm.sh
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 1.txt 2.txt 3.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+rm: remove regular empty file '1.txt'? y
+rm: remove regular empty file '2.txt'? y
+rm: remove regular empty file '3.txt'? y
+Done
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+2rm.sh
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh 
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 1.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ mkdir h
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+1.txt  2rm.sh  h
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+rm: remove regular empty file '1.txt'? y
+rm: remove regular file '2rm.sh'? y
+rm: cannot remove 'h': Is a directory
+Done
+mprao@Ubuntu22:~/210911002/lab4/2q$ ls
+h
+mprao@Ubuntu22:~/210911002/lab4/2q$ rmdir
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+mprao@Ubuntu22:~/210911002/lab4/2q$ rmdir h
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 2rm.sh
+mprao@Ubuntu22:~/210911002/lab4/2q$ vim 2rm.sh 
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 1.txt
+mprao@Ubuntu22:~/210911002/lab4/2q$ touch 2.py
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2
+bash: 2: No such file or directory
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2
+2.py    2rm.sh  
+mprao@Ubuntu22:~/210911002/lab4/2q$ bash 2rm.sh 
+rm: remove regular empty file '1.txt'? y
+rm: remove regular empty file '2.py'? y
+done
+mprao@Ubuntu22:~/210911002/lab4/2q$ cd ..
+mprao@Ubuntu22:~/210911002/lab4$ touch 3sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ vim sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ bash 3sort.sh hello abc
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  2q  3sort.sh  copy-file1.txt  file1.txt  sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ vim sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ bash sort.sh 
+The sorted array is:
+sort.sh: line 24: syntax error: unexpected end of file
+mprao@Ubuntu22:~/210911002/lab4$ vim sort.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 3sort.sh "hello" "apple"
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  2q  3sort.sh  copy-file1.txt  file1.txt  sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ vim 3sort.sh 
+mprao@Ubuntu22:~/210911002/lab4$ vim sort.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash sort.sh "hello" "apple"
+The sorted array is:
+apple
+hello
+mprao@Ubuntu22:~/210911002/lab4$ rm 3sort.sh 
+mprao@Ubuntu22:~/210911002/lab4$ mv sort.sh 3sort.sh
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  2q  3sort.sh  copy-file1.txt  file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ bash 3sort.sh "helo" "apple"
+The sorted array is:
+apple
+helo
+mprao@Ubuntu22:~/210911002/lab4$ vim 3sort.sh 
+mprao@Ubuntu22:~/210911002/lab4$ man rm
+mprao@Ubuntu22:~/210911002/lab4$ touch wordcount.sh
+mprao@Ubuntu22:~/210911002/lab4$ mv wordcount.sh 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  3sort.sh       copy-file1.txt
+2q      4wordcount.sh  file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ cat >> file4.txt
+Hello
+world
+Information
+Technology
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  3sort.sh       copy-file1.txt  file4.txt
+2q      4wordcount.sh  file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh -linecount file4.txt 
+Invalid Option
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt -linecount
+Invalid Option
+mprao@Ubuntu22:~/210911002/lab4$ vim word
+mprao@Ubuntu22:~/210911002/lab4$ ls
+1cp.sh  3sort.sh       copy-file1.txt  file4.txt
+2q      4wordcount.sh  file1.txt
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt -linecount
+Invalid Option
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt 3.linecount
+Invalid Option
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt 1.linecount
+Invalid Option
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh file4.txt -linecount
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh -linecount file4.txt 
+4 file4.txt
+mprao@Ubuntu22:~/210911002/lab4$ cat file4.txt 
+Hello
+world
+Information
+Technology
+mprao@Ubuntu22:~/210911002/lab4$ vim 4wordcount.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 4wordcount.sh -wordcount file4.txt 
+4 file4.txt
+mprao@Ubuntu22:~/210911002/lab4$ touch 5menuDriven.sh
+mprao@Ubuntu22:~/210911002/lab4$ vim 5menuDriven.sh 
+mprao@Ubuntu22:~/210911002/lab4$ bash 5menuDriven.sh 
+1. Search
+2. Delete
+3. Exit
+Enter pattern
+1
+Enter File name
+file4.txt
+Enter choice
+^C
+mprao@Ubuntu22:~/210911002/lab4$ bash 5menuDriven.sh 
+1. Search
+2. Delete
+3. Exit
+Enter pattern
+Hello
+Enter File name
+file4.txt
+Enter choice
+1
+Hello
+mprao@Ubuntu22:~/210911002/lab4$ bash 5menuDriven.sh 
+1. Search
+2. Delete
+3. Exit
+Enter pattern
+H^C  
+mprao@Ubuntu22:~/210911002/lab4$ cat file4.txt 
+Hello
+world
+Information
+Technology
+mprao@Ubuntu22:~/210911002/lab4$ bash 5menuDriven.sh 
+1. Search
+2. Delete
+3. Exit
+Enter pattern
+Hello
+Enter File name
+file4.txt
+Enter choice
+2
+mprao@Ubuntu22:~/210911002/lab4$ cat file4.txt 
+world
+Information
+Technology
+mprao@Ubuntu22:~/210911002/lab4$ vim file4.txt 
+mprao@Ubuntu22:~/210911002/lab4$ vim 5menuDriven.sh 
+
